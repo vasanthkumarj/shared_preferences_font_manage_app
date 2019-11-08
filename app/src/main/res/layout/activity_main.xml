@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:hint="@string/edit_text_hint"
+        android:gravity="start"
+        />
+
+    <TextView
+        android:layout_margin="4dp"
+        android:id="@+id/seek_bar_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text"
+        android:text="@string/seek_bar_label_text"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:layout_margin="4dp"
+        android:id="@+id/seek_bar_font_zize_adjuster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seek_bar_label"
+        android:scrollbarSize="4dp" />
+
+
+    <TextView
+        android:layout_margin="4dp"
+        android:layout_below="@id/seek_bar_font_zize_adjuster"
+        android:id="@+id/radio_group_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radio_group_label_text"
+        android:textSize="20sp"
+        />
+
+
+    <RadioGroup
+        android:layout_margin="4dp"
+        android:layout_below="@id/radio_group_label"
+        android:id="@+id/radio_group_color_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/red_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_color_red"
+            android:onClick="changeTextColor"
+            />
+
+        <RadioButton
+            android:id="@+id/green_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_color_green"
+            android:onClick="changeTextColor"
+            />
+
+        <RadioButton
+            android:id="@+id/blue_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_color_blue"
+            android:onClick="changeTextColor"
+            />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_margin="4dp"
+        android:paddingTop="4dp"
+        android:layout_below="@id/radio_group_color_selector"
+        android:id="@+id/linear_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@android:color/holo_blue_bright"
+            android:id="@+id/button_save"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="@string/save_button" />
+
+        <Button
+            android:layout_marginTop="4dp"
+            android:id="@+id/button_delete"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="@string/delete_button" />
+
+    </LinearLayout>
+
+</RelativeLayout>

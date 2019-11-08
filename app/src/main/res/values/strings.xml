@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">shared_preferences_font_manage_app</string>
+    <string name="seek_bar_label_text">Font size:</string>
+    <string name="text_color_red">Red</string>
+    <string name="edit_text_hint">Enter your text here</string>
+    <string name="radio_group_label_text">Font color:</string>
+    <string name="text_color_green">Green</string>
+    <string name="text_color_blue">Blue</string>
+    <string name="save_button">Save</string>
+    <string name="delete_button">Delete</string>
+</resources>
